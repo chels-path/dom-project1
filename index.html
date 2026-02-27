@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        
+        <!-- Cart Item 1 -->
+        <div class="cart-item" data-id="1">
+            <div class="item-details">
+                <img src="product1.jpg" alt="Product 1" class="item-image">
+                <div class="item-info">
+                    <h3 class="item-name">Product Name 1</h3>
+                    <p class="item-price">$25.99</p>
+                </div>
+            </div>
+            
+            <div class="item-quantity">
+                <button class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="plus-btn">+</button>
+            </div>
+            
+            <div class="item-subtotal">$25.99</div>
+            
+            <div class="item-actions">
+                <button class="like-btn">❤️</button>
+                <button class="delete-btn">🗑️</button>
+            </div>
+        </div>
+        
+        <!-- Cart Item 2 -->
+        <div class="cart-item" data-id="2">
+            <div class="item-details">
+                <img src="product2.jpg" alt="Product 2" class="item-image">
+                <div class="item-info">
+                    <h3 class="item-name">Product Name 2</h3>
+                    <p class="item-price">$39.99</p>
+                </div>
+            </div>
+            
+            <div class="item-quantity">
+                <button class="minus-btn">-</button>
+                <span class="quantity">2</span>
+                <button class="plus-btn">+</button>
+            </div>
+            
+            <div class="item-subtotal">$79.98</div>
+            
+            <div class="item-actions">
+                <button class="like-btn">❤️</button>
+                <button class="delete-btn">🗑️</button>
+            </div>
+        </div>
+        
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <div class="total">
+                <span>Total:</span>
+                <span class="total-price">$105.97</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <script src="shopping-cart.js"></script>
+</body>
+</html>
